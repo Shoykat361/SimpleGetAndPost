@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectancleshape">
+
+            <EditText
+                android:id="@+id/nameInputEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/vector"
+                android:drawablePadding="10dp"
+                android:textColor="#add827"
+                android:paddingStart="20dp"
+                android:hint="Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectancleshape">
+
+            <EditText
+                android:id="@+id/addressInputEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#add827"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="10dp"
+                android:paddingStart="20dp"
+                android:hint="Address" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectancleshape">
+
+            <EditText
+                android:id="@+id/phoneInputEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/vector_2"
+                android:drawablePadding="10dp"
+                android:paddingStart="20dp"
+                android:textColor="#add827"
+                android:hint="Phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectancleshape">
+
+            <EditText
+                android:id="@+id/dueinputDueEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/vector_3"
+                android:drawablePadding="10dp"
+                android:paddingStart="20dp"
+                android:textColor="#add827"
+                android:hint="Old Due" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!--<EditText
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:id="@+id/etCustomerSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/vector_4"
+                android:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:textColor="#add827"
+                android:drawableEnd="spinner"
+                android:hint="select_client_group" />-->
+            <!--<EditText
+                android:id="@+id/etCustomerSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toStartOf="@id/spinner"
+                android:layout_weight="3"
+                android:background="@drawable/rectancleshape"
+                android:drawableStart="@drawable/vector_4"
+                android:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:textColor="#add827"
+                android:hint="select_client_group" />-->
+            <Spinner
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_473"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/rectancleshape"
+            android:text="save_customer" />
+
+        <!--<EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+           android:ems="10"
+            android:background="@drawable/rectancleshape"
+            android:drawableStart="@drawable/vector"
+            android:drawablePadding="10dp"
+            android:paddingStart="20dp"
+            android:hint="Name"
+            />-->
+        <!--<EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:background="@drawable/rectancleshape"
+            android:drawableStart="@drawable/location"
+            android:drawablePadding="10dp"
+            android:paddingStart="20dp"
+            android:hint="Address" />-->
+        <!--<EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:background="@drawable/rectancleshape"
+            android:inputType="number"
+            android:drawableStart="@drawable/vector_2"
+            android:drawablePadding="10dp"
+            android:paddingStart="20dp"
+            android:hint="Phone" />-->
+        <!-- <EditText
+             android:id="@+id/etDue"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_margin="20dp"
+             android:ems="10"
+             android:background="@drawable/rectancleshape"
+             android:drawableStart="@drawable/vector_3"
+             android:drawablePadding="10dp"
+             android:paddingStart="20dp"
+             android:hint="Old Due" />-->
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/rectancleshape">
+                <EditText
+                    android:id="@+id/etCustomerSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectancleshape"
+                    android:drawableStart="@drawable/vector_4"
+                    android:drawablePadding="5dp"
+                    android:paddingStart="5dp"
+                    android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                    android:hint="@string/select_client_group" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rectancleshape">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/frame_473"/>
+            </LinearLayout>
+
+    &ndash;&gt;
+        </LinearLayout>-->
+    </LinearLayout>
+</layout>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="UserId" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="id" />
+
+        <EditText
+            android:id="@+id/ettittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="tittle" />
+
+        <EditText
+            android:id="@+id/etBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="body" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewXml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>-->
